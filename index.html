@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Real-time decisions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="cssFile.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<div class="container">
+
+	<div class="container">
+		<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+	 		<div style="text-align: center;color: white">
+	 			<h3> Real-time Decisions in Dynamic Environment</h3>
+	 		</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+
+				<a id="home" href="index.html">
+					<div class="row col-lg-12 clicked">
+						<H5> Home </H5>
+					</div>
+				</a>
+				<a id="sl" onmouseover="changeSL(this)" href="SL.html">	
+					<div class="row col-lg-12 buttons">
+						<H5> Statistical Learning </H5>
+					</div>
+				</a>
+				<a id="ol" href="OL.html">
+					<div class="row col-lg-12 buttons">
+						<H5> Online Learning </H5>
+					</div>
+				</a>
+				<a id="oco" href="OCO.html">
+					<div class="row col-lg-12 buttons">
+						<H5> Online Convex Optimization </H5>
+					</div>
+				</a>
+				<a id="mpc" href="MPC.html">
+					<div class="row col-lg-12 buttons">
+						<H5> Model Predictive Control </H5>
+					</div>
+				</a>
+				<a id="oso" href="OSO.html">
+					<div class="row col-lg-12 buttons">
+						<H5> Online Stochastic Optimization </H5>
+					</div>
+				</a>
+				<a id="reference" href="references.html">
+					<div class="row col-lg-12 buttons">
+						<H5> References </H5>
+					</div>
+				</a>
+
+	    	</div>
+
+	    	<div class="col-lg-6">
+				<canvas id="myCanvas">
+					
+				</canvas>
+	    	</div>
+
+	    	<div class="col-lg-3">
+				<div class="row col-lg-12" style="color: black;text-align: justify;">
+					<h5>
+					Real-world systems are dynamic with system state changing over time, either discretly or continuously. Decisions are made at specific times to bring the system to an optimal state ("optimal" defined differently e.g. minimal cost, system stability or other customer-centric metrices). <br> <br>
+					These decisions are based on <span style = "color:blue">available data, current state, system constraints and expected future state</span>. This work provides a simple taxonomy of attributes of different real-time decision making models.<br><br>
+					<span style="color:red"> A small note: </span><br>
+					The taxonomy is not strict and many problems can be placed under different classification and may not have all the attributes of that particular classification. Lyapunov Optimization is the focus for examples.
+					</h5>
+				</div>
+	    	</div>
+
+	    </div>
+	  
+	</div>
+
+	<div data-role="footer" data-position="fixed" style="text-align: center">
+	    <h5>Ashutosh Nayak | nayak2@purdue.edu | Industrial Engineering, Purdue University (Ph.D. Candidate)</h5>
+	</div>
+
+</div>
+ 
+<script src="jsFileIndex.js"> </script>
+</body>
+</html>
